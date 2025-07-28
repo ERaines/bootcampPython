@@ -1,2 +1,5 @@
-print('ola muindo  ')
-print('teste novo')
+
+pname = input('Seu nome')
+pidade = input('Idade')
+print(pname)
+print(pidade)
