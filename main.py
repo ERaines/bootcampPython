@@ -16,11 +16,19 @@
 # print(f') produtudo vai durar {int(dias)} dias')
 
 
-nota_aluno = float(input('Qual foi sua nota no exame'))
+# nota_aluno = float(input('Qual foi sua nota no exame'))
 
-if nota_aluno >= 7:
-    print('Você esta aprovado!')
-elif nota_aluno >= 5:
-    print('Você esta de recuperação')
-else:
-    print('Você esta reprovado!')
+# if nota_aluno >= 7:
+#     print('Você esta aprovado!')
+# elif nota_aluno >= 5:
+#     print('Você esta de recuperação')
+# else:
+#     print('Você esta reprovado!')
+
+
+def calcular_porcentagem(preco, porcentagem):
+    return preco - (preco * porcentagem / 100)
+
+
+valor_final = calcular_porcentagem(1010, 25)
+print(f'O valor Final com desconto é de R${valor_final:.2f}')
