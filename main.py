@@ -26,12 +26,33 @@
 #     print('Você esta reprovado!')
 
 
-def calcular_porcentagem(preco, porcentagem):
-    return preco - (preco * porcentagem / 100)
+# def calcular_porcentagem(preco, porcentagem):
+#     return preco - (preco * porcentagem / 100)
 
 
-valor_final = calcular_porcentagem(1010, 25)
-print(f'O valor Final com desconto é de R${valor_final:.2f}')
+# valor_final = calcular_porcentagem(1010, 25)
+# print(f'O valor Final com desconto é de R${valor_final:.2f}')
 
 
 # Listas
+
+
+# cidades = ['Rio de Janeiro', 'São Paulo', 'Salvador', 'Goiania']
+#                 0               1             2         3
+
+# cidades.append('Santa Catarina')
+# cidades.remove('Salvador')
+# cidades.insert(1, 'Santa Catarina')
+# cidades.pop(0)
+# cidades.sort()
+
+# print(cidades)
+
+cor_cliente = input('Digite a cor desejada: ')
+cores = ['amarelo', 'verde', 'azul', 'vermelho', 'laranja']
+
+if cor_cliente.lower() in cores:
+    print('Em estoque')
+
+else:
+    print('Não temos esta cor em estoque')
