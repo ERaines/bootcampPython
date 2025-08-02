@@ -32,3 +32,6 @@ def calcular_porcentagem(preco, porcentagem):
 
 valor_final = calcular_porcentagem(1010, 25)
 print(f'O valor Final com desconto é de R${valor_final:.2f}')
+
+
+# Listas
