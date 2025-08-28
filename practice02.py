@@ -8,13 +8,22 @@ while True:
 
         n = int(input("Digite um numero inteiro positivo: "))
         if n < 0:
-            print("Por favor digite um numeor inteiro positivo: ")
+            print("Por favor digite um numeor positivo: ")
         else:
             break
     except ValueError:
         print("Por favor digite um numero inteiro valido: ")
 
 
+result_list = []
+
 for i in range(1, 11):
-    result = n * i
-    print(f"{n} x {i} = {result}")
+    result_list.append(f"{n} x {i} = {n * i}")
+
+if n > 100:
+    print("resultado Grande. Mostrando apenas os ultimos 3 itens")
+    for line in result_list[-3:]:
+        print(line)
+else:
+    for line in result_list:
+        print(line)
