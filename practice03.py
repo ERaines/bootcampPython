@@ -11,3 +11,16 @@ def calculate_factorial(n):
         steps.append(i)
 
     return result, steps
+
+
+while True:
+
+    try:
+        n = int(input("Adicione um numero inteiro positivo: "))
+
+        if n < 0:
+            print("Por favor adicione um numero positivo: ")
+        else:
+            break
+    except ValueError:
+        print("Por favor aidicone um numero valido: ")
