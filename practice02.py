@@ -6,13 +6,13 @@
 while True:
     try:
 
-        n = int(input("Digite um numero inteiro positivo: "))
+        n = int(input("Enter a positive integer: "))
         if n < 0:
-            print("Por favor digite um numeor positivo: ")
+            print("Please enter a positeve integer: ")
         else:
             break
     except ValueError:
-        print("Por favor digite um numero inteiro valido: ")
+        print("Please enter a valid integer: ")
 
 
 result_list = []
@@ -21,7 +21,7 @@ for i in range(1, 11):
     result_list.append(f"{n} x {i} = {n * i}")
 
 if n > 100:
-    print("resultado Grande. Mostrando apenas os ultimos 3 itens")
+    print("Result is too large. Showing only the last 3 items.")
     for line in result_list[-3:]:
         print(line)
 else:
