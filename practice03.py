@@ -16,11 +16,21 @@ def calculate_factorial(n):
 while True:
 
     try:
-        n = int(input("Adicione um numero inteiro positivo: "))
+        n = int(input("Enter a positive integer: "))
 
         if n < 0:
-            print("Por favor adicione um numero positivo: ")
+            print("Please enter a positive integer: ")
         else:
             break
     except ValueError:
-        print("Por favor aidicone um numero valido: ")
+        print("Please enter a valid integer: ")
+
+factorial_result, steps = calculate_factorial(n)
+
+if n > 50:
+    print("Value too large. Showing last 5 steps only:")
+    print("... x " + " x ".join(str(i)
+          for i in steps[-5:]) + f" = {factorial_result:.6e}")
+else:
+    print(f"{n}! = " + " x ".join(str(i)
+          for i in steps) + f" = {factorial_result}")
