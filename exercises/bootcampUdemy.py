@@ -58,6 +58,8 @@
 #     print('Não temos esta cor em estoque')
 
 
+# teste
+
 def mostrar_menu() -> None:
     print("\n==== Lista de Compras ====")
     print("1 - Adicionar item")
